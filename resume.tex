@@ -1,0 +1,177 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty}
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+    \color[HTML]{1C033C} \Huge{Murtaza Munshi} \\[6pt]
+    \\
+    \textcolor[HTML]{371e77}{{{{\faEnvelope} murtazamunshi@live.com}} $|$}
+    \textcolor[HTML]{371e77}{{{\faMobile} +91-8871022168 $|$}}
+    \textcolor[HTML]{371e77}{{+91-7974110721}}
+
+    \textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faGithub} github.com/mzrokz}} $|$}
+    \textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faLinkedin} linkedin.com/in/murtaza-m-21a93767}}}
+\end{tabularx}
+
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Languages:} C\#, HTML, CSS, JavaScript, TypeScript, SQL, LINQ\\[3pt]
+\color[HTML]{1C033C}\textbf{Technologies \& Tools:} .NET (MVC, Core, Blazor), Angular, ReactJS, NodeJs, Azure, AWS, Key-Vault, EC2, S3, Lambda, Docker, RabbitMQ, SignalR, Redis \\[3pt]
+
+%Experience
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{{Steer73, London, United Kingdom}} \hfill \color[HTML]{371e77} Nov 2021 - Present            \\[4pt]
+    \color[HTML]{371e77}\textbf{\textit{Software Development Engineer-III}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Led the migration of Angular projects from old versions to the latest one which led to 40\% lighter builds and 35\% faster performance.
+            \item Implemented gulp process to reduce the build size and faster initial load of the web app.
+            \item C\#, HTML/CSS/JS, .Net Core, Blazor, Angular, Gulp, Node, SignalR, RabbitMQ, Azure Key-Vault, Azure Blob Storage
+        \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \color[HTML]{1C033C} \textbf{{Peregrine InfoWorld, Ahmedabad}} \hfill \color[HTML]{371e77} Jun 2021 - Oct 2021 \\[4pt]
+    \color[HTML]{371e77}\textbf{\textit{Software Development Engineer-II}}\ \hfill \color[HTML]{4B28A4}            \\[5pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Underwent training on Azure Functions, Azure Blob Storage and client project requirements.
+        \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \color[HTML]{1C033C} \textbf{{GlobalSysInfo, Gandhinagar}} \hfill \color[HTML]{371e77} May 2019 - May 2021 \\[4pt]
+    \color[HTML]{371e77}\textbf{\textit{Software Development Engineer-II}}\ \hfill \color[HTML]{4B28A4}        \\[5pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Led the migration of legacy asp.net web app to .Net core web app with EF Core which resulted in multiple deployment options and faster api responses.
+            \item Implemented CI/CD pipeline on Azure which resulted in removal of the legacy manual deployment process.
+            \item Integrated open-source library for maps which resulted in 30\% cost saving on the map services.
+            \item C\#, HTML/CSS/JS, .NET Core, TypeScript, Azure Pipelines, Azure Key-Vault, SQL, EF Core, Angular, Leaflet
+        \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \color[HTML]{1C033C} \textbf{Freelancer, Indore} \hfill \color[HTML]{371e77} Feb 2017 - Apr 2019 \\[4pt]
+    \color[HTML]{371e77}\textbf{\textit{Fullstack Developer}} \hfill \color[HTML]{4B28A4}            \\[5pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Worked on multiple technologies \& frameworks, for multiple companies and worked on more than 20+ projects.
+            \item Angular, Ionic, .NET, ReactJS, Cordova, Electron, d3, SQL, MongoDB, Firebase, AWS, Azure, Docker
+        \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \color[HTML]{1C033C} \textbf{Ideavate Solutions, Indore} \hfill \color[HTML]{371e77} Feb 2016 - Feb 2017 \\[4pt]
+    \color[HTML]{371e77}\textbf{\textit{Software Development Engineer-II}} \hfill \color[HTML]{4B28A4}       \\[5pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Resolved support tickets and reduced the count to under 100 in 8 months.
+            \item PL-SQL, SQL Server Reporting Service (SSRS), SQL Server Integration Service (SSIS), MVC with AngularJS
+        \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \color[HTML]{1C033C} \textbf{Laxyo Soft Solutions, Indore} \hfill \color[HTML]{371e77} Apr 2015 - Feb 2016 \\[4pt]
+    \color[HTML]{371e77}\textbf{\textit{Software Development Engineer-I}} \hfill \color[HTML]{4B28A4}          \\[5pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Implemented real-time communication \& notifications which resolved reporting delays for a courier delivery service.
+            \item SignalR, HTML, CSS, Javascript, Bootstrap, Asp.Net, C\#, SQL Server
+        \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \color[HTML]{1C033C} \textbf{Process Master Solutions, Indore} \hfill \color[HTML]{371e77} Oct 2014 - Apr 2015 \\[4pt]
+    \color[HTML]{371e77}\textbf{\textit{Software Development Engineer-I}} \hfill \color[HTML]{4B28A4}              \\[5pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Implemented features in pharmaceutical ERP which improved planning and tracking of production.
+            \item Implemented notification system in WinForms using the SQL Server Service Broker.
+            \item C\#, .NET, WinForms, SQL Server, Service Broker, Crystal Reports
+        \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \color[HTML]{1C033C} \textbf{RGTU Bhopal}                     & \hfill \color[HTML]{371e77} 2010 - 2014                    \\
+    \color[HTML]{371e77} B.E. in Computer Science and Engineering & \hfill \color[HTML]{4B28A4} \textit{\textbf{CGPA: 7.3/10}} \\
+    \multicolumn{2}{@{}X@{}}{Relevant Coursework: Object Oriented Programming, Databases, Data Structures and Algorithms, Operating Systems, Computer Networks, Advance Data Structures and Algorithms}
+\end{tabularx}\\[3pt]
+
+
+% \section{Awards and Certificates}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+%     \begin{minipage}[t]{\linewidth}
+%         \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+%             \item 
+%         \end{itemize}
+%     \end{minipage}
+% \end{tabularx}
+
+\end{document}
